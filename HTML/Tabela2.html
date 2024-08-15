@@ -1,0 +1,238 @@
+<!-- Reproduza a página HTML ilustrada abaixo (anexado a essa descrição temos um PDF para facilitar copiar e colar o conteúdo) usando os seguintes elementos HTML conforme necessário:
+
+Elementos:
+- table: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/table
+- caption: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/caption
+- colgroup: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup
+- col: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col
+- thead: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/thead
+- th: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/th
+- tbody: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/tbody
+- tr: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/tr
+- td: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td
+- tfoot: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/tfoot
+
+Sobre Tabelas:
+- https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Tables/Basics
+
+OBS1: Use o cabeçalho do tipo "<h1>" para o título "Horário 2024.1 - Superior em ADS".
+OBS2: Use o título da tabela para para "1º PERÍODO" e "2º PERÍODO". -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORARIO</title>
+</head>
+
+<body>
+    <table border="1">
+        <caption>1º PERIODO</caption>
+        <thead>
+            <tr>
+                <th colspan="6">MANHA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>HORA</th>
+                <th>SEGUNDA</th>
+                <th>TERCA</th>
+                <th>QUARTA</th>
+                <th>QUINTA</th>
+                <th>SEXTA</th>
+            </tr>
+            <tr>
+                <td>7:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7:50</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8:40</td>
+                <td></td>
+                <td>Introdução a computação - antonio.dias</td>
+                <td>Algoritmo - andre.almeida</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9:30</td>
+                <td colspan="5" align="center">INTERVALO</td>
+            </tr>
+            <tr>
+                <td>9:50</td>
+                <td></td>
+                <td rowspan="3">Introdução a computação - antonio.dias</td>
+                <td rowspan="3">Algoritmo - andre.almeida</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10:40</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11:30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="6" align="center">TARDE</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>13:50</td>
+                <td rowspan="4">Algoritmo - andre.almeida</td>
+                <td rowspan="4"> MAC - suemilton.gervazio</td>
+                <td></td>
+                <td rowspan="2">LPT I - lucia.badu</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>14:40</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>15:50</td>
+                <td></td>
+                <td rowspan="2">Inglês I - victoria.oliveira</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16:40</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <caption>2º PERIODO</caption>
+        <thead>
+            <tr>
+                <th colspan="6">MANHA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>HORA</th>
+                <th>SEGUNDA</th>
+                <th>TERCA</th>
+                <th>QUARTA</th>
+                <th>QUINTA</th>
+                <th>SEXTA</th>
+            </tr>
+            <tr>
+                <td>7:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7:50</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8:40</td>
+                <td>LPT II - sayonara.costa</td>
+                <td>Prob e Est - suemilton.gervazio</td>
+                <td></td>
+                <td></td>
+                <td>Redes - renata.pontes</td>
+            </tr>
+            <tr>
+                <td>9:30</td>
+                <td colspan="5" align="center">INTERVALO</td>
+            </tr>
+            <tr>
+                <td>9:50</td>
+                <td>LPT II - sayonara.costa</td>
+                <td>Prob e Est - suemilton.gervazio</td>
+                <td></td>
+                <td></td>
+                <td rowspan="3">Redes - renata.pontes</td>
+            </tr>
+            <tr>
+                <td>10:40</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11:30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="6" align="center">TARDE</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>13:50</td>
+                <td rowspan="4">POO - antonio.dias</td>
+                <td rowspan="4">POO - antonio.dias</td>
+                <td></td>
+                <td rowspan="2">Inglês II - victoria.oliveira</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>14:40</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>15:50</td>
+                <td></td>
+                <td rowspan="2">Lógica e Teoria dos Grafos - artur.oliveira</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16:40</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

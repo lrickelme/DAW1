@@ -1,0 +1,118 @@
+<!-- Reproduza a página HTML ilustrada abaixo (anexado a essa descrição temos um PDF para facilitar copiar e colar o conteúdo) usando os seguintes elementos HTML conforme necessário:
+
+Elementos:
+form: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+label: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/label
+input: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input
+textarea: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea
+button: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/button
+input - checkbox: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input/checkbox
+input - radio: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio
+
+fieldset: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/fieldset
+legend: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/legend
+
+input - color: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
+input - date: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input/date
+input - number: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
+input - tel: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel
+select: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/select
+option: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/option
+
+OBS1: Faça uso dos "fieldset" com os respectivos títulos, conforme imagem de exemplo do resultado final esperado.
+OBS2: Verifique como os dados estão chegando no destino ("https://httpbin.org/post") para validar que você fez uso correto do "checkbox" e do "radio".
+OBS3: O campo "Data de nascimento:" deve ser adequado para inserção de datas.
+OBS4: O campo "Qual a sua idade" deve ser do tipo numérico e permitir apenas valores maiores ou iguais a um.
+OBS5: O campo "Qual a sua cor predileta?" deve ser do tipo que seleciona a cor a partir de uma paleta de cores.
+OBS6: O campo "Qual o seu telefone?" deve ser adequado para inserção de números de telefone, exigindo a inserção de 11 dígitos ao todo (não menos, não mais). Além disso, caso a página fosse acessada via celular, deveria ser apresentado o teclado númerico de discar um telefone ao acessar esse campo.
+OBS7: O campo "Qual o turno que você prefere estudar?" deve ter os seguintes valores possíveis: "Escolha uma opção", "Manhã", "Tarde" e "Noite". -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Cadastro de Usuario</title>
+</head>
+<body>
+    <h1>Cadastro de Usuario</h1>
+    <form action="https://httpbin.org/post " method ="post">
+        <fieldset>
+            <legend>Dados Básicos</legend>
+            <div>
+                <label for="name"> Nome:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <br>
+            <div>
+                <label for="email"> Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="psw"> Senha:</label>
+                <input type="password" name="psw" id="psw" required>
+            </div>
+            <br>
+            <div>
+                <label for="bday"> Data de nascimento:</label>
+                <input type="date" name="bday" id="bday" required>
+            </div>
+            <br>
+            <div>
+                <label for="age">Qual a sua idade?</label>
+                <input type="number" name="age" id="age" min="1" max="150"/>
+            </div>
+            <br>
+            <div>
+                <label for="favcolor">Qual a sua cor predileta?</label>
+                <input type="color" name="favcolor" id="favcolor"><br>
+            </div>
+            <br>
+            <div>
+                <label for="phone">Qual o seu telefone?</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{11}"required/>
+            </div>
+            <br>
+            <div>
+                <label for="turto"> Qual turno voce prefere estudar?</label>
+                <br>
+                <select name="turno" id="turno">
+                    <option value="selectionoption">Escolha uma opção</option>
+                    <option value="manha">Manha</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select> 
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <fieldset>
+                <legend>Quais tecnologias web te interessam?</legend>
+                <input type="checkbox" name="html" id="html" value="html">
+                <label for="html">HTML</label>
+                <br>
+                <input type="checkbox" name="css" id="css" value="css">
+                <label for="css">CSS</label>
+                <br>
+                <input type="checkbox" name="js" id="js" value="js">
+                <label for="js">JavaScript</label> 
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend>Voce e de Esperanca?</legend>
+                <input type="radio" name="city" id="yes" value="yes" checked>
+                <label for="yes">Sim</label>
+                <br>
+                <input type="radio" name="city" id="no" value="no" checked>          
+                <label for="no">Nao</label>
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="Ciar">
+        </div>
+        </div>
+    </form>   
+</body>
+</html>
